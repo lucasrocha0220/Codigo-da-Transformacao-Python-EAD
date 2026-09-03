@@ -1,6 +1,6 @@
 from datetime import datetime
 
-print("💛💙💛💙 DESAFIO EXTRA: SAUDAÇÃO + HORA ATUAL 💛💙💛💙")
+print(" DESAFIO EXTRA: SAUDAÇÃO + HORA ATUAL ")
 
 nome = input("Digite o seu nome: ")
 

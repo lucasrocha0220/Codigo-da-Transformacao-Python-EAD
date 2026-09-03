@@ -45,37 +45,28 @@ que o sistema continue atendendo às necessidades do negócio e dos clientes.
 para que os usuários possam interagir de forma mais intuitiva e agradável.
 
 '''
-# Inicializando as variáveis para o Produto 1 (vazio)
+
 p1_nome = "açaí comum"
 p1_estoque = 100
 p1_preco = 8.90
 p1_validade = "10/12/2026"
 p1_descricao = "Açaí comum, ideal para quem gosta de um sabor clássico."
 
-# Preciso criar um dicionário para o produto 1, mas não sei como fazer isso ainda.
-# produto_p1 = {
-#     "p1_nome": "açaí comum",
-#     "p1_estoque": p1_estoque,
-#     "p1_preco": p1_preco,
-#     "p1_validade": p1_validade,
-#     "p1_descricao": p1_descricao
-# }
 
-# Inicializando as variáveis para o Produto 2 (vazio)
 p2_nome = "açaí guarana"
 p2_estoque = 50
 p2_preco = 12.90
 p2_validade = "10/10/2026"
 p2_descricao = "Açaí guarana, com sabor refrescante e ingredientes de qualidade."
 
-# Inicializando as variáveis para o Produto 3 (vazio)
+
 p3_nome = "açaí cupuaçu"
 p3_estoque = 130
 p3_preco = 15.90
 p3_validade = "10/12/2026"
 p3_descricao = "Açaí cupuaçu, com ingredientes locais e sabor autêntico."
 
-# Isso é um comentário de linha única.
+
 
 while True: 
     print('-' * 48 + '\n')
@@ -83,8 +74,6 @@ while True:
     print('1 - Cadastrar produto')
     print('2 - Listar produtos')
     print('3 - Realizar venda')
-# cardapio; forma de pagamento; contato-empresa; historico de vendas; 
-## modo de entrega; suporte;
 
     print('0 - Sair')
     print('\n--------------------------------------\n')
@@ -93,8 +82,7 @@ while True:
 
     if opcao == '1':
         print('Cadastrando produtos...\n')
-    # faça a lógica para cadastrar o produto aqui, 
-    ## e somente a inseção dos dados usando input e os tipos de dados.
+    
         if p1_nome == "":
             p1_nome = input('Digite o nome do produto: ')
             p1_estoque = int(input('Digite a quantidade em estoque: '))
@@ -128,7 +116,7 @@ while True:
             print('Nenhum produto cadastrado no sistema ainda.')
 
         else:
-            # Mostra o Produto 1 se ele existir
+        
             if p1_nome != "":
                 print(f"Nome: {p1_nome} | Preço: R$ {p1_preco:.2f} | Estoque: {p1_estoque} unid.")
 
@@ -136,7 +124,7 @@ while True:
 
                 print('🔥' * 30)
                 
-            # Mostra o Produto 2 se ele existir
+         
             if p2_nome != "":
 
                 print(f"Nome: {p2_nome} | Preço: R$ {p2_preco:.2f} | Estoque: {p2_estoque} unid.")
@@ -145,7 +133,7 @@ while True:
 
                 print('🔥' * 30)
                 
-            # Mostra o Produto 3 se ele existir
+           
             if p3_nome != "":
 
                 print(f"Nome: {p3_nome} | Preço: R$ {p3_preco:.2f} | Estoque: {p3_estoque} unid.")
@@ -162,7 +150,7 @@ while True:
         else:
             nome_venda = input('Digite o nome do produto que deseja vender: ')
             
-            # Testamos o nome digitado contra o Produto 1
+      
             if nome_venda.lower() == p1_nome.lower() and p1_nome != "":
                 qtd_venda = int(input(f"Quantas unidades de '{p1_nome}' deseja vender? "))
                 if qtd_venda <= p1_estoque:
@@ -173,7 +161,7 @@ while True:
                 else:
                     print(f'❌ Estoque insuficiente! Temos apenas {p1_estoque}.')
             
-            # Testamos contra o Produto 2
+          
             elif nome_venda.lower() == p2_nome.lower() and p2_nome != "":
                 qtd_venda = int(input(f"Quantas unidades de '{p2_nome}' deseja vender? "))
                 if qtd_venda <= p2_estoque:
@@ -184,7 +172,7 @@ while True:
                 else:
                     print(f'❌ Estoque insuficiente! Temos apenas {p2_estoque}.')
                     
-            # Testamos contra o Produto 3
+           
             elif nome_venda.lower() == p3_nome.lower() and p3_nome != "":
                 qtd_venda = int(input(f"Quantas unidades de '{p3_nome}' deseja vender? "))
                 if qtd_venda <= p3_estoque:

@@ -22,8 +22,7 @@ def obter_numeros():
 
 def verificar_par_impar(numero):
     """Verifica se um número (inteiro) é par ou ímpar."""
-    # Convertemos para int para garantir que a operação % funcione corretamente
-    # para números como 4.0, que são floats mas representam inteiros.
+  
     if int(numero) % 2 == 0:
         return "par"
     else:
@@ -47,14 +46,13 @@ def main():
             else:
                 print("Os números são iguais.")
 
-            # Verificação de par ou ímpar
-            # Usamos int() para garantir que números como 4.0 sejam tratados como 4 para a verificação.
+          
             print(f"{num1} é {verificar_par_impar(num1)}.")
             print(f"{num2} é {verificar_par_impar(num2)}.")
 
         elif escolha == '2':
             print("Saindo do programa. Até mais!")
-            break  # Sai do loop while
+            break 
         else:
             print("Opção inválida. Por favor, escolha 1 ou 2.")
 
