@@ -1,5 +1,5 @@
 import unittest
-from app import app
+from modulo12.modulo12.modulo12.modulo12.app import app
 
 class TesteAPIFlask(unittest.TestCase):
 
