@@ -1,5 +1,4 @@
 import requests
-
 GENEROS_TMDB = {
     28: "Ação", 12: "Aventura", 16: "Animação", 35: "Comédia", 80: "Crime",
     99: "Documentário", 18: "Drama", 10751: "Família", 14: "Fantasia",
